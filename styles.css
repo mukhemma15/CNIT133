@@ -1,0 +1,54 @@
+body{ 
+
+	background-image: url("Background.png");
+	text-align: center;
+	font-family: courier, Georgia, "Times New Roman";
+
+
+
+}
+
+nav {
+	display: block;
+	text-align: center;
+	font-size: 15px;
+	 
+	background-color: grey;
+	margin: 0px;
+	padding: 14px 16px;
+
+
+}
+
+h3 {
+	color: #4D482C;
+}
+
+nav a {
+
+	color: #4D482C;
+}
+
+
+
+table {
+
+	border-collapse: collapse;
+	margin: 50px auto;
+	background-color: #D6D6D6; 
+}
+
+table, th, td, td a {
+
+
+	/*border: 3px solid #504848 ; */
+	padding: 8px;
+	text-align: center;
+	color: #787852;
+
+}
+
+
+footer {
+	font-size: 10px;
+}
