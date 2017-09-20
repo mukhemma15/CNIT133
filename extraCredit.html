@@ -1,0 +1,179 @@
+<!-- =========================================
+    =====   Emma Mukhambetova - 09/07/2017  =====
+    =====   CNIT 133 - Homework 2 - Extra Credit   =====
+
+====================================================
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+ <title>CNIT-133 - Homework2 - Part4</title>
+ <link rel="stylesheet" href="style.css">
+
+  <!-- script to color input text -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+
+
+$("#textfield").focus();
+$(":reset").click(function () {
+             $("#textfield").focus();
+           });
+
+$('#textfield').focus(function() {
+      $(this).css('background-color', 'grey');
+  }); //end focus funciton
+
+
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    }); // end slideToggle function
+
+
+
+
+$("#btn").click(function() {
+
+ var number1, dol, peso, euro, canad, jap, brit;
+
+	number1 = parseInt($('#textfield').val());
+
+
+
+	peso = (18.23340 * number1).toFixed(2);
+	euro =  (0.88667 * number1).toFixed(2);
+	canad = (1.34533 * number1).toFixed(2);
+	jap = (109.34351 * number1).toFixed(2);
+	brit = (0.77481 * number1).toFixed(2);
+
+	$("#value1").val(brit);
+	$("#value3").val(canad);
+	$("#value5").val(peso);
+	$("#value2").val(euro);
+	$("#value4").val(jap);
+
+
+
+});
+  }); // end ready function
+
+
+
+</script>
+
+
+
+
+<style>
+
+table
+{
+border-collapse:collapse;
+}
+table,th, td
+{
+border: 1px solid black;
+}
+
+
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: lightblue;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+  <style>
+
+.body { width: 550px;
+       margin: 0px auto;
+
+  }
+
+
+
+</style>
+</head>
+<body>
+
+
+<section class="body">
+<h3> The foreign exchange rates on June 6, 2017</h3>
+    <div id="flip">Click to open/close</div>
+	<div id ="panel">
+
+<form name="myform">
+
+<table>
+<caption> Monetary Exchange Rates</caption>
+<tr>
+<th>Currency </th>
+<th>Rate</th>
+<th>Value</th>
+</tr>
+
+
+<tr>
+<th>British Pound</th>
+<th id="pound1">0.77481</th>
+<th><input id="value1"></th>
+</tr>
+
+<tr>
+<th>Euro</th>
+<th id="euro1">0.88667</th>
+<th><input  name="value2" id="value2"></th>
+</tr>
+
+<tr>
+<th>Canadian Dollar</th>
+<th  id="can1">1.34533</th>
+<th><input  name="value3" id="value3"></th>
+</tr>
+
+
+<tr>
+<th>Japanese Yen</th>
+<th id="yen1">109.34351</th>
+<th><input name="value4" id="value4"></th>
+</tr>
+
+<tr>
+<th>Mexican Peso</th>
+<th id="peso1">18.23340</th>
+<th><input name="value55" id="value5"></th>
+</tr>
+
+
+<tr>
+<th colspan='2'>Enter Amount of U.S dollars</th>
+<th><input name='amount' type='text' id='textfield'/></th>
+</tr>
+
+
+
+
+</table>
+
+<button type="button" id="btn">Calculate</button>
+<input type="reset" value="Reset">
+</form>
+</div>
+
+
+
+</section>
+</body>
+
+</html>

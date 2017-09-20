@@ -1,0 +1,188 @@
+<!-- =========================================
+    =====   Emma Mukhambetova - 09/07/2017  =====
+    =====   CNIT 133 - Homework 2 - Part3   =====
+
+====================================================
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 	<title>CNIT-133 - Homework2 - Part3</title>
+ 	<meta name="CNIT133- Homework" content="Homework #2 - Part3">
+ 	<meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+
+
+
+
+<script>
+
+function process()
+
+{ var number1, number2, number3, number4, number5
+  positive = 0, negative = 0, zero = 0; // declare variables
+
+
+//input 5 numbers
+  number1 = document.getElementById("n1").value;
+  number2 = document.getElementById("n2").value;
+  number3 = document.getElementById("n3").value;
+  number4 = document.getElementById("n4").value;
+  number5 = document.getElementById("n5").value;
+
+//convert to integers
+
+  num1 = parseInt(number1);
+  num2 = parseInt(number2);
+  num3 = parseInt(number3);
+  num4 = parseInt(number4);
+  num5 = parseInt(number5);
+
+// check condition
+//num1
+if (num1 > 0)
+  positive = positive + 1;
+
+  if (num1 < 0)
+  negative = negative + 1;
+
+  if (num1 == 0)
+  zero = zero + 1;
+//num 2
+
+  if (num2 > 0)
+    positive = positive + 1;
+
+    if (num2 < 0)
+    negative = negative + 1;
+
+    if (num2 == 0)
+    zero = zero + 1;
+
+    //num 3
+
+    if (num3 > 0)
+      positive = positive + 1;
+
+      if (num3 < 0)
+      negative = negative + 1;
+
+      if (num3 == 0)
+      zero = zero + 1;
+
+  //num 4
+
+  if (num4 > 0)
+    positive = positive + 1;
+
+    if (num4 < 0)
+    negative = negative + 1;
+
+    if (num4 == 0)
+    zero = zero + 1;
+
+
+  // //num 5
+
+
+  if (num5 > 0)
+    positive = positive + 1;
+
+    if (num5 < 0)
+    negative = negative + 1;
+
+    if (num5 == 0)
+    zero = zero + 1;
+
+
+document.getElementById("result").value = ("Numbers you entered: " + num1 + ", " + num2 + ", " + num3 + ", " + num4 +", " + num5 +
+"\nPositive Numbers: " + positive + " Numbers > 0" +
+"\nNegative Numbers: " + negative + " Numbers < 0" +
+"\nNumber of Zeros: " + zero + " Numbers = 0")
+
+
+}
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("textarea").fadeTo("slow", 0.15);
+      });
+    });
+</script>
+
+</head>
+
+<body>
+  <header> Homework 2 - Part3 </header>
+  <div class="body">
+    <br>
+    <div class="nav-header">
+    <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW1.html"> HW1 </a>
+    <a href="CNIT133_HW2.html"> HW2 </a>
+    <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW3.html" target="_blank"> HW3 </a>
+    <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW4.html" target="_blank"> HW4 </a>
+    <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW5.html" target="_blank"> HW5 </a>
+    <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW6.html" target="_blank"> HW6 </a>
+    <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW7.html" target="_blank"> HW7 </a>
+    <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW8.html" target="_blank"> HW8 </a>
+
+
+  </div>
+  <section class="body">
+
+    <form id="myform" name="myform">
+      <table>
+        <tr>
+          <td>First Number: </td>
+          <td><input type="text" id="n1" size="15"></td>
+        </tr>
+
+
+        <tr>
+          <td> Second number: </td>
+          <td><input type="text" id="n2" size="15"></td>
+        </tr>
+
+        <tr>
+          <td> Third number: </td>
+          <td><input type="text" id="n3" size="15"></td>
+        </tr>
+
+        <tr>
+          <td> Forth number: </td>
+          <td><input type="text" id="n4" size="15"></td>
+        </tr>
+
+        <tr>
+          <td> Fifth number: </td>
+          <td><input type="text" id="n5" size="15"></td>
+        </tr>
+
+
+
+      </table>
+
+      <br> <br>
+
+      Result: <textarea rows="7" cols="40" id="result" style="background-color: grey;"></textarea><br>
+
+      <input type="button" onclick="process()" value="SUBMIT">
+      <input type="reset" value="RESET">
+
+    </form>
+    <button type="button"> Click to fade the results</button>
+
+
+
+
+</section>
+</body>
+</html>
