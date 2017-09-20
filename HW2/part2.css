@@ -1,0 +1,40 @@
+/* =====================
+Emma Mukhambetova - 09/07/2017
+
+Style for the part2 of HW2
+=========================
+
+
+*/
+
+.nav-header {
+margin: auto;
+word-spacing: 10px;
+height:100px;
+background-color: white;
+padding-top: 30px;
+font-size: 20px;
+
+}
+
+a{
+  color: #292a40;
+}
+
+body{
+
+  margin-top: 10px;
+  text-align: center;
+  background-image: url("back_img.jpg");
+
+}
+
+table, td, tr{
+
+	border-collapse: collapse;
+	margin: 50px auto;
+	background-color: #D6D6D6;
+  border: 3px solid black;
+  padding: 15px;
+  color: #050736;
+}

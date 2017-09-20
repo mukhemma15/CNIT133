@@ -1,0 +1,114 @@
+<!-- =========================================
+    =====   Emma Mukhambetova - 09/07/2017  =====
+    =====   CNIT 133 - Homework 2 - Part4   =====
+
+====================================================
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+ 	<title>CNIT-133 - Homework2 - Part4</title>
+
+
+    <script>   //script for the 2nd table
+
+    function mytable() {
+    // Set the htmlOutput variable to a string that contains an HTML table
+
+     var htmlOutput = "";
+    htmlOutput += "<table border='2'>";
+    htmlOutput += "<tr><th>Number</th>    <th>Square</th> <th>Cube</th> </tr>";
+    htmlOutput += "<tr align=\"right\"><td>" + 7 +   "</td>" + "<td>" + Math.pow(7, 2) + "</td>" + "<td>" + Math.pow(7, 3) + "</td></tr>";
+    htmlOutput += "<tr align=\"right\"><td>" + 8 +   "</td>" + "<td>" + Math.pow(8, 2) + "</td>" + "<td>" + Math.pow(8, 3) + "</td></tr>";
+    htmlOutput += "<tr align=\"right\"><td>" + 9 +   "</td>" + "<td>" + Math.pow(9, 2) + "</td>" + "<td>" + Math.pow(9, 3) + "</td></tr>";
+    htmlOutput += "<tr align=\"right\"><td>" + 10 +   "</td>" + "<td>" + Math.pow(10, 2) + "</td>" + "<td>" + Math.pow(10, 3) + "</td></tr>";
+    htmlOutput += "</table>";
+
+      document.getElementById("myTable2").innerHTML = htmlOutput;
+    }
+
+
+    function hide() {
+
+    document.getElementById("myTable2").innerHTML = "";
+
+    }
+</script>
+
+
+
+</head>
+
+<body>
+  <section class="body">
+    <header> Homework2 - Part 4 </header> <br><br>
+    <div class="body">
+      <br>
+      <div class="nav-header">
+      <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW1.html"> HW1 </a>
+      <a href="CNIT133_HW2.html"> HW2 </a>
+      <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW3.html" target="_blank"> HW3 </a>
+      <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW4.html" target="_blank"> HW4 </a>
+      <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW5.html" target="_blank"> HW5 </a>
+      <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW6.html" target="_blank"> HW6 </a>
+      <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW7.html" target="_blank"> HW7 </a>
+      <a href="https://hills.ccsf.edu/~emukhamb/cnit133/CNIT133_HW8.html" target="_blank"> HW8 </a>
+
+
+    </div>
+<script>
+
+document.write(
+  "<table border='2'> <tr> " +
+  "<th>Number</th>    <th>Square</th> <th>Cube</th> </tr>");
+document.write("<tr align=\"right\"><td>" + 1 +   "</td>" + "<td>" + Math.pow(1, 2) + "</td>" + "<td>" + Math.pow(1,3) + "</td></tr>");
+document.write("<tr align=\"right\"><td>" + 2 +   "</td>" + "<td>" + Math.pow(2, 2) + "</td>" + "<td>" + Math.pow(2, 3) + "</td></tr>");
+document.write("<tr align=\"right\"><td>" + 3 +   "</td>" + "<td>" + Math.pow(3, 2) + "</td>" + "<td>" + Math.pow(3, 3) + "</td></tr>");
+document.write("<tr align=\"right\"><td>" + 4 +   "</td>" + "<td>" + Math.pow(4, 2) + "</td>" + "<td>" + Math.pow(4, 3) + "</td></tr>");
+document.write("<tr align=\"right\"><td>" + 5 +   "</td>" + "<td>" + Math.pow(5, 2) + "</td>" + "<td>" + Math.pow(5, 3) + "</td></tr>");
+document.write("<tr align=\"right\"><td>" + 6 +   "</td>" + "<td>" + Math.pow(6, 2) + "</td>" + "<td>" + Math.pow(6, 3) + "</td></tr>");
+
+
+document.write("</table>");
+document.close()
+
+</script>
+<br>
+
+<!-- Table2 will be here -->
+
+  <section class="tb">
+    <h3>Table 2 </h3>
+    <form>
+
+<div class="btn-group">
+<!-- using bootstrap to create buttons -->
+  <button type="button" class="btn btn-info" value="Hide table" onclick="hide();"> Hide </button>
+ <button type="button" class="btn btn-info" value="Create table" onclick="mytable();"> Create table</button>
+</div>
+ </form>
+
+ <br>
+ <div id="myTable2"></div>
+
+</section>
+
+
+
+
+
+
+
+</section>
+</body>
+</html>
